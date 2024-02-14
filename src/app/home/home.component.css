@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Redacted&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Redacted+Script&display=swap");
+
+.hello-h1 {
+  color: rgb(255, 255, 255);
+  text-shadow: #000000ba 0 0 20px;
+  font-family: "DM Serif Display", serif;
+  font-size: 63px;
+  margin-left: 160px;
+  margin-top: 150px;
+}
+
+.main-segment {
+  position: absolute;
+  z-index: 2;
+  margin-top: 60px;
+  /* animation: glitch 1s linear infinite; */
+}
+
+.submenu-wrapper {
+  width: 150%;
+  height: 150%;
+  display: flex;
+  margin-top: 50px;
+  margin-right: 20px;
+  padding-left: 700px;
+  padding-right: 200px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #000000;
+  box-shadow: #000000aa 2px 0 5px;
+}
+
+.glitch {
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 3px;
+  z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+  display: block;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.glitch:before {
+  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #00ffff;
+  z-index: -1;
+}
+
+.glitch:after {
+  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+    infinite;
+  color: #ff00ff;
+  z-index: -2;
+}
+
+@keyframes glitch-it {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+/* @keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+.main-segment:before,
+.main-segment:after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.main-segment:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+.main-segment:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+} */
+
+.about-segment {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 2;
+  margin-top: 900px;
+}
+.about-h1 {
+  font-family: "DM Serif Display", serif;
+  text-shadow: #000000ba 0 0 20px;
+  text-shadow: #000000ba 0 0 20px;
+  font-size: 63px;
+  margin-left: 160px;
+  margin-top: 150px;
+}
+
+.navbar {
+  margin-left: 100px;
+  color: white;
+  /* z-index: 1; */
+  /* position: sticky; */
+}
+
+.nav-item {
+  font-size: 18px;
+  margin-left: 40px;
+}
+
+.work-segment {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 2;
+  margin-top: 1500px;
+}
+
+.contact-segment {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 2;
+  margin-top: 2200px;
+}
+
+.main-div {
+  margin-left: 160px;
+  margin-top: 14px;
+}
+
+.btn-nav {
+  color: rgb(38, 115, 97);
+  font-size: 20px;
+  font-family: "DM Serif Display", serif;
+}
+.a-nav {
+  text-decoration: none;
+  color: rgb(38, 115, 97);
+}
+
+.a-nav:hover {
+  color: #ffffffb4;
+  transition: 0.2s;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #7fffd4; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* Gives that scrolling effect as the typing happens */
+  /* margin: 0 auto;  */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(100, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+
+.front-div {
+  font-style: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-start; /* or other values like 'center', 'flex-start', 'flex-end' */
+  align-items: center;
+  gap: 10px;
+}
+
+.front-h2 {
+  color: rgb(255, 255, 255);
+  margin-right: 200px;
+}
+
+.text-blur-out {
+  /* font-family: "Redacted Script", cursive; */
+  font-family: "DM Serif Display", serif;
+  color: #7fffd4;
+  /* color: #7fffd4; */
+  font-size: 32px;
+  font-weight: 200px;
+  margin-top: 2px;
+  /* margin-right: 1140px; */
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 1s;
+  /* animation-delay: 1s; */
+}
+
+/* .app-three-js-scene {
+  position: sticky;
+  z-index: 1;
+} */

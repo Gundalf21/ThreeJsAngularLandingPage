@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Redacted&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Redacted+Script&display=swap");
+
+.about-h1 {
+  color: rgb(255, 255, 255);
+  font-family: "DM Serif Display", serif;
+  font-size: 80px;
+  margin-left: 160px;
+  margin-top: 750px;
+}
+
+.main-segment {
+  position: absolute;
+  z-index: 2;
+}
+
+.main-div {
+  margin-left: 160px;
+  margin-top: 14px;
+}
+
+.front-div {
+  font-style: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-start; /* or other values like 'center', 'flex-start', 'flex-end' */
+  align-items: center;
+  gap: 10px;
+}
+
+.front-h2 {
+  color: rgb(255, 255, 255);
+}
+
+.text-blur-out {
+  /* font-family: "Redacted Script", cursive; */
+  font-family: "DM Serif Display", serif;
+  color: #7fffd4;
+  /* color: #7fffd4; */
+  font-size: 32px;
+  font-weight: 200px;
+  margin-top: 2px;
+  /* margin-right: 1140px; */
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 1s;
+  /* animation-delay: 1s; */
+}
+
+.app-three-js-scene {
+  position: absolute;
+  z-index: 1;
+}

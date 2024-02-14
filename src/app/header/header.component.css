@@ -1,0 +1,14 @@
+.navbar {
+  margin-left: 100px;
+  color: white;
+  z-index: 1;
+}
+
+.nav-item {
+  font-size: 18px;
+  margin-left: 40px;
+}
+/* .header-component {
+  color: white;
+  z-index: 1;
+} */
